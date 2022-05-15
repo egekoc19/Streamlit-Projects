@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 
 st.title("Looking at How NBA Shots are Changing")
-st.write("In this app we are going to take a look at how 3 point shots are changing from 1980 to 2017 ")
+st.write("In this app we are going to take a look at how 3 point shots changed from 1980 ")
 st.write(" Here is the data source 👉 [How 3p shooting is changing NBA by David Lancharro](https://www.kaggle.com/datasets/drgilermo/nba-players-stats)")
 
 st.write("Our table looks like this: ")
