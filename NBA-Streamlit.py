@@ -144,7 +144,7 @@ st.pyplot(graph3)
 """)
 
 st.write("Miami Heat has the best percentage in the league with 37.9% and Oklahoma City Thunder ahs the worst percentage with 32.3%. The league average is 35.4%")
-st.markdown(##)
+st.markdown("##")
 st.write("Thank you for reading!")
 
 
