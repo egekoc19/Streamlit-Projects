@@ -10,7 +10,7 @@ st.title("Looking at How NBA Shots are Changing")
 st.write("In this app we are going to take a look at how 3 point shots changed from 1980 ")
 st.write(" Here is the data source 👉 [How 3p shooting is changing NBA by David Lancharro](https://www.kaggle.com/datasets/drgilermo/nba-players-stats)")
 
-url1= 'https://github.com/egekoc19/Streamlit-Projects/blob/main/Seasons_Stats.csv'
+url1= 'https://raw.githubusercontent.com/egekoc19/Streamlit-Projects/main/Seasons_Stats.csv'
 st.write("Our table looks like this: ")
 fullstats = pd.read_csv(url1,index_col=[0])
 st.write(fullstats.head(100))
@@ -84,7 +84,7 @@ st.markdown('##')
 st.write("Now we are going to look at general averages data")
 st.write(" Here is the data source 👉 [NBA League Averages - Totals](https://www.basketball-reference.com/leagues/NBA_stats_totals.html)")
 
-url2 = 'https://github.com/egekoc19/Streamlit-Projects/blob/main/general_stats.csv'
+url2 = 'https://raw.githubusercontent.com/egekoc19/Streamlit-Projects/main/general_stats.csv'
 general_averages = pd.read_csv(url2,index_col=[0])
 st.dataframe(general_averages)
 st.write("We can look at how 3 point shot has been improving over seasons now.")
@@ -115,7 +115,7 @@ st.pyplot(graph2)
 st.markdown("###")
 
 st.write("We can look at the current season and see the current 3 point percentages of the teams")
-url3 = 'https://github.com/egekoc19/Streamlit-Projects/blob/main/21-22.csv'
+url3 = 'https://raw.githubusercontent.com/egekoc19/Streamlit-Projects/main/21-22.csv'
 current_season = pd.read_csv(url3, index_col=[0])
 st.dataframe(current_season)
 team_list = current_season['Team']
