@@ -4,8 +4,7 @@ import numpy as np
 import datetime
 import base64
 import matplotlib.pyplot as plt
-import plotly.express as px
-import plotly.graph_objects as go
+
 
 st.title("Looking at How NBA Shots are Changing")
 st.write("In this app we are going to take a look at how 3 point shots are changing from 1980 to 2017 ")
