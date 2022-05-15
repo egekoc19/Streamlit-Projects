@@ -21,7 +21,7 @@ st.markdown('##')
 
 
 st.write('TOT means “Two Other Teams” meaning that player played for two (or more) teams that season. So we are going to ignore those. We will also fillna() function to get rid of NaN values')
-st.write("Also, since 3 point shot was made official in 1980, we are only going to look at the data from that year. We will also change the data type to date")
+st.write("Also, since 3 point shot was made official in 1980, we are only going to look at the data from that year. We will also change the year column to date format")
 fullstats = fullstats[fullstats.Tm != 'TOT']
 stats = fullstats.loc[fullstats['Year'] > 1979]
 stats= stats.fillna(0)
@@ -115,6 +115,7 @@ st.pyplot(graph2)
 st.markdown("###")
 
 st.write("We can look at the current season and see the current 3 point percentages of the teams")
+st.write(" Here is the data source 👉 [Teams Shooting Dashboard General - NBA.com]https://www.nba.com/stats/teams/shots-general)")
 url3 = 'https://raw.githubusercontent.com/egekoc19/Streamlit-Projects/main/21-22.csv'
 current_season = pd.read_csv(url3, index_col=[0])
 st.dataframe(current_season)
